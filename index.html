@@ -4,14 +4,32 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-US-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+       <!--  including this link tag allows you to connect to your css style sheet -->
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
         <title>More SCSS</title>
     </head>
     <body>
-        <div class="parent">
-            <h2 class="px-size">HELLO</h2>
-            <h2 class="rem-size">HELLO</h2>
-            <h2 class="em-size">HELLO</h2>
+        <h1 class="title">HELLO</h1>
+        <!-- example 1: default flexbox -->
+        <div class="parent parent-intro">
+            <div class="child one">HELLO. testing</div>
+            <div class="child two">HELLO. testing</div>
+            <div class="child three">HELLO. testing</div>
+        </div>
+        <br/>
+        <div class="parent parent-spacing">
+            <div class="child one">HELLO. testing</div>
+            <div class="child two">HELLO. testing</div>
+            <div class="child three">HELLO. testing</div>
+        </div>
+        <br/>
+        <div class="parent parent-flexconstants">
+            <div class="child one">HELLO. testing</div>
+            <div class="child two">HELLO. testing</div>
+            <div class="child three">HELLO. testing</div>
         </div>
     </body>
 </html>

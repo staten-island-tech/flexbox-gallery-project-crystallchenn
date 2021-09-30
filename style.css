@@ -1,6 +1,47 @@
-html, body, *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-size: 62.5%; Normally 100% is 16
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
+  background-color: rgb(240, 234, 226);
+  color: saddlebrown;
+}
+.title {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.parent {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.one {
+  font-size: 15px;
+  border: 3px solid rebeccapurple;
+  height: 300px;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+.two {
+  font-size: 15px;
+  border: 3px solid blue;
+  height: 300px;
+  margin-left: ;
+  flex-grow: 1;
+}
+.three {
+  font-size: 15px;
+  border: 3px solid royalblue;
+  height: 300px;
+  flex-grow: 1;
+}
+.child {
 }
