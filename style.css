@@ -10,7 +10,7 @@ body,
   font-family: "Playfair Display", serif;
   font-size: medium;
   text-align: center;
-  border-radius: 15px;
+  border-radius: 25px;
   flex-direction: row;
 }
 .title {
@@ -19,9 +19,9 @@ body,
   margin-top: 25px;
 }
 .parent {
-  width: auto;
+  width: 95%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: center;
   height: 450px;
   margin: 2rem auto;
@@ -29,9 +29,9 @@ body,
 }
 .child {
   font-size: 2rem;
-  flex-grow: 1;
+  width: 27%;
   border: 5px solid green;
-  box-shadow: 0 0.5rem 0.5rem rgb(12, 85, 12);
+  box-shadow: 1rem 1rem 1rem rgb(12, 85, 12);
 }
 .player {
   width: 80%;
