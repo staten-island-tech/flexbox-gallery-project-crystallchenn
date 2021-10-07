@@ -5,18 +5,23 @@ body,
   margin: 0;
   box-sizing: border-box;
   font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
+}
+body {
   background-color: rgb(240, 234, 226);
   color: saddlebrown;
   font-family: "Playfair Display", serif;
-  font-size: medium;
+  font-size: large;
   text-align: center;
-  border-radius: 25px;
+  border-radius: 25rem;
   flex-direction: row;
 }
 .title {
-  font-size: 50px;
+  font-size: 5rem;
   text-align: center;
   margin-top: 25px;
+}
+.bio {
+  font-size: 2rem;
 }
 .parent {
   width: 95%;
@@ -31,7 +36,11 @@ body,
   font-size: 2rem;
   width: 27%;
   border: 5px solid green;
-  box-shadow: 1rem 1rem 1rem rgb(12, 85, 12);
+  box-shadow: 1rem 1rem 1rem rgb(53, 94, 53);
+  transition: all 0.3s;
+}
+.child:hover {
+  transform: scale(1.1);
 }
 .player {
   width: 80%;
