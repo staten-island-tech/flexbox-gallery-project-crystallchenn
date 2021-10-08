@@ -14,6 +14,7 @@ body {
   text-align: center;
   border-radius: 25rem;
   flex-direction: row;
+  border-radius: 25px;
 }
 .title {
   font-size: 5rem;
@@ -26,11 +27,12 @@ body {
 .parent {
   width: 95%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
-  height: 450px;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 15px;
+  height: ;
 }
 .child {
   font-size: 2rem;
@@ -38,6 +40,7 @@ body {
   border: 5px solid green;
   box-shadow: 1rem 1rem 1rem rgb(53, 94, 53);
   transition: all 0.3s;
+  margin: 3rem auto;
 }
 .child:hover {
   transform: scale(1.1);
@@ -46,4 +49,14 @@ body {
   width: 80%;
   height: 70%;
   object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+  .child {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .child {
+    width: 80%;
+  }
 }
