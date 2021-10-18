@@ -20,7 +20,7 @@ body {
   text-align: center;
   margin-top: 2.5rem;
   background-color: rgb(233, 222, 208);
-  animation: test 4s infinite;
+  animation: test 4s;
   position: absolute;
 }
 .bio {
@@ -66,11 +66,5 @@ body {
   }
 }
 @keyframes test {
-  0% {
-    left: 30%;
-    bottom: ;
-  }
-  100% {
-    left: 20%;
-  }
+  
 }
