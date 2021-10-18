@@ -12,16 +12,15 @@ body {
   font-family: "Playfair Display", serif;
   font-size: large;
   text-align: center;
-  border-radius: 25rem;
   flex-direction: row;
 }
 .title {
   font-size: 5rem;
   text-align: center;
-  margin-top: 2.5rem;
+  margin: 3rem;
   background-color: rgb(233, 222, 208);
-  animation: test 4s;
-  position: absolute;
+  animation: test 4s ease-in;
+  position: relative;
 }
 .bio {
   font-size: 2rem;
@@ -57,14 +56,19 @@ body {
 }
 @media screen and (max-width: 800px) {
   .child {
-    width: 45%;
+    width: 47%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
   .child {
-    width: 80%;
+    width: 90%;
   }
 }
 @keyframes test {
-  
+  0% {
+    left: 0%
+  }
+  100% {
+    left: 10%;
+  }
 }
