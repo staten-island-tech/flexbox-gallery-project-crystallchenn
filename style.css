@@ -7,25 +7,43 @@ body,
   font-size: 62.5%; /* Normally 100% is 16px we want the size to be 10px so we do 62.5% */
 }
 body {
-  background-color: rgb(240, 234, 226);
   color: rgb(138, 69, 21);
-  font-family: "Playfair Display", serif;
-  font-size: large;
+  font-family: "Slabo 27px", serif;
+  font-size: 6rem;
   text-align: center;
   flex-direction: row;
+  background-image: url(img/stairs.jpeg);
+  height: fit-content;
+  animation: fade 3s;
 }
 .title {
   font-size: 5rem;
   text-align: center;
-  margin: 3rem;
-  background-color: rgb(233, 222, 208);
-  animation: test 4s ease-in;
+  margin: 2rem;
+  background-color: rgb(129, 102, 63);
+  animation: test 3s ease-in;
   position: relative;
+  color: black;
+}
+@keyframes test {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.title:hover {
+  transform: scale(1.5);
 }
 .bio {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 1rem;
-  background-color: rgb(231, 217, 198);
+  background-color: rgb(129, 102, 63);
+  animation: test 3s ease-in;
+  position: relative;
+  color: black;
+  
 }
 .parent {
   border-radius: 3rem;
@@ -38,21 +56,39 @@ body {
   padding: 3rem;
 }
 .child {
-  font-size: 2.2rem;
+  font-size: 3rem;
   width: 27%;
   border: 5px solid rgb(1, 129, 1);
-  box-shadow: 1rem 1rem 1rem rgb(53, 94, 53);
+  border-radius: 3rem;
+  box-shadow: 1rem 1rem 1rem rgb(50, 139, 50);
   transition: all 0.3s;
   margin: 3rem auto;
-  height: 32rem;
+  height: 40rem;
+  background-color: #d4d2cc;
+  animation: rotation 3s;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.image {
+  border-radius: 1rem;
+  border: black;
+  width: 85%;
+  height: 75%;
+  object-fit: cover;
+}
+.image:hover, 
+.image:focus,
+.image:active {
+  transform: translateY(-0.5rem);
 }
 .child:hover {
   transform: scale(1.1);
-}
-.image {
-  width: 80%;
-  height: 70%;
-  object-fit: cover;
 }
 @media screen and (max-width: 800px) {
   .child {
@@ -64,11 +100,16 @@ body {
     width: 90%;
   }
 }
-@keyframes test {
+@keyframes fade {
   0% {
-    left: 0%
+    opacity: 0%;
   }
   100% {
-    left: 10%;
+    opacity: 100%;
   }
+}
+.caption:hover, 
+.caption:focus,
+.caption:active {
+  transform: scale(1.3);
 }
