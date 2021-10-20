@@ -41,6 +41,20 @@ body {
   position: relative;
   color: black;
 }
+.title {
+  background-color: rgb(129, 102, 63);
+  transition: background-color .5s;
+}
+.title:hover {
+  background-color: rgb(176, 224, 230);
+}
+.bio {
+  background-color: rgb(129, 102, 63);
+  transition: background-color .5s;
+}
+.bio:hover {
+  background-color: rgb(219, 207, 134);
+}
 .parent {
   border-radius: 3rem;
   width: 95%;
@@ -54,14 +68,30 @@ body {
 .child {
   font-size: 3rem;
   width: 27%;
-  border: 5px solid rgb(1, 129, 1);
-  border-radius: 3rem;
+  border: 0.7rem solid rgb(1, 129, 1);
+  border-radius: 1.5rem;
   box-shadow: 1rem 1rem 1rem rgb(50, 139, 50);
   transition: all 0.3s;
   margin: 3rem auto;
+  padding: 1rem;
   height: 40rem;
   background-color: #d4d2cc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: rotation 3s;
+}
+.child-title {
+  color: black;
+  font-size: 2.7rem;
+  font-style: italic;
+  padding: 0.5rem;
+  transition: all 0.4s;
+}
+.child-sub-header {
+  font-size: 1.8rem;
+  padding: 2rem;
+  color: rgb(139, 48, 25);
 }
 @keyframes rotation {
   from {
@@ -74,6 +104,7 @@ body {
 .image {
   border-radius: 1rem;
   border: black;
+  box-shadow: 0.5rem 0.5rem 0.5rem black;
   width: 85%;
   height: 75%;
   object-fit: cover;
@@ -86,17 +117,26 @@ body {
 .child:hover {
   transform: scale(1.1);
 }
+.caption {
+  margin-top: 1.3rem;
+}
 .caption:hover, 
 .caption:focus,
 .caption:active {
   transform: scale(1.3);
+  font-style: italic;
 }
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 1752px ) {
   .child {
-    width: 47%;
+    width: 30%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1372px) {
+  .child {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
   .child {
     width: 90%;
   }
